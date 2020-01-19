@@ -28,6 +28,10 @@ body {
   background-color: #fefefe;
   border-left: 1px solid var(--green);
 }
+header,
+article {
+  margin-bottom: 20px;
+}
 
 article,
 footer {
@@ -53,6 +57,9 @@ h4,
 h5 {
   font-weight: 500;
 }
+h3 {
+  font-weight: 600;
+}
 h4,
 h5 {
   margin-top: 0;
@@ -72,9 +79,8 @@ h5 {
 
 a {
   color: var(--green);
-  padding: 5px;
 }
-a:hover {
+a:active {
   background-color: rgba(149, 193, 31, 0.2);
   color: #333;
   transition: all 200ms ease-in;
@@ -113,12 +119,13 @@ li {
   text-decoration: none;
   border-bottom: 1px solid var(--green);
   line-break: none;
+  padding: 5px;
 }
 
 .header {
   text-align: center;
   flex-wrap: wrap;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
 .header__logo {
@@ -174,8 +181,14 @@ li {
 }
 .card__link {
   color: #333;
-  margin-left: 5px;
+  margin-left: 8px;
 }
+
+.card__link--text {
+  color: #333;
+  margin-left: 0;
+}
+
 .card__link__icon {
   height: 1em;
   fill: #333;
@@ -238,11 +251,21 @@ li {
     margin: 150px auto 150px;
     padding: 20px 50px;
   }
+  header,
+  article {
+    margin-bottom: 40px;
+  }
 
   article,
   footer {
     margin-top: -60px;
     border-top: 60px solid transparent;
+  }
+
+  a:hover {
+    background-color: rgba(149, 193, 31, 0.2);
+    color: #333;
+    transition: all 200ms ease-in;
   }
 
   .nav {
